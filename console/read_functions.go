@@ -2,9 +2,9 @@ package console
 
 import (
 	"bufio"
+	conv "github.com/KaymeKaydex/algorithms-console-io.git/conversion"
 	"os"
 	"strings"
-	"github.com/KaymeKaydex/algorithms-console-io.git/conversion"
 )
 
 func (Console) ReadLine() string {
@@ -18,9 +18,6 @@ func (Console) ReadStringArray() []string {
 	slice := strings.Fields(scanner.Text())
 	return slice
 }
-func (Console) ReadIntArray() ([]int, error) {
-	scanner := bufio.NewScanner(os.Stdin)
-	scanner.Scan()
-	slice := strings.Fields(scanner.Text())
-	return SliceAtoi(slice)
+func (c *Console) ReadIntArray() ([]int, error) {
+	return conv.SliceAtoi(c.ReadStringArray())
 }

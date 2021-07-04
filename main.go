@@ -1,9 +1,11 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	console "github.com/KaymeKaydex/algorithms-console-io.git/console"
+)
 
 func main() {
-	c := Console{}
-
-	fmt.Println(c.ReadLine())
+	c := console.New()
+	fmt.Println(c.ReadIntArray())
 }
