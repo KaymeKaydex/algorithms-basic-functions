@@ -1,9 +1,8 @@
 package conversion
 
 import (
-	"github.com/KaymeKaydex/algorithms-console-io.git/equals"
+	"github.com/KaymeKaydex/algorithms-basic-functions.git/equals"
 	"testing"
-
 )
 
 func TestSliceAtoi(t *testing.T) {
@@ -15,25 +14,24 @@ func TestSliceAtoi(t *testing.T) {
 		{
 			[]string{"213", "321"},
 			false,
-			[]int{213,321},
+			[]int{213, 321},
 		},
 		{
 			[]string{"5345", "231", "2135"},
 			false,
-			[]int{5345,231,2135},
+			[]int{5345, 231, 2135},
 		},
 		{
 			[]string{"-213", "-9321"},
 			false,
-			[]int{-213,-9321},
-
+			[]int{-213, -9321},
 		},
 	}
 
 	for _, c := range cases {
 		result, _ := SliceAtoi(c.input)
 		if !equals.IntArrayEquals(result, c.output) {
-			t.Errorf("Bad result by int conversation. Expected : %d. Result : %d", c.output, result )
+			t.Errorf("Bad result by int conversation. Expected : %d. Result : %d", c.output, result)
 		}
 	}
 }

@@ -2,7 +2,7 @@ package main
 
 import (
 	"fmt"
-	console "github.com/KaymeKaydex/algorithms-console-io.git/console"
+	console "github.com/KaymeKaydex/algorithms-basic-functions.git/console"
 )
 
 func main() {

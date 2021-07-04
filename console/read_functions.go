@@ -2,7 +2,7 @@ package console
 
 import (
 	"bufio"
-	conv "github.com/KaymeKaydex/algorithms-console-io.git/conversion"
+	conv "github.com/KaymeKaydex/algorithms-basic-functions.git/conversion"
 	"os"
 	"strings"
 )
