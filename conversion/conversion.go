@@ -2,6 +2,7 @@ package conversion
 
 import "strconv"
 
+// SliceAtoi Ковертирует массив строк в массив интов
 func SliceAtoi(a []string) ([]int, error) {
 	si := make([]int, 0, len(a))
 	for _, a := range a {
